@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cat App</title>
+    <link rel="icon" href="/src/kitty.png">
+    <link rel="stylesheet" href="/src/style.css">
+  
+  </head>
+  <body>
+<div class="container">
+<h2>The Cats App </h2>
+
+         <form class="form-group">
+ <div class="one">
+  <h6>Number of Cats Facts (50 maximum)</h6>
+  <input type="number" id="cat-facts" placeholder="number of cat facts" >
+  <button type="submit"id="fact">Submit</button>
+ </div>
+
+<div class="one">
+<h6>Number of Cats Photos (10 maximum)</h6>
+<input type="number" id="cat-photos" placeholder="number of cat photos">
+<button type="submit"id="photo"> Submit</button>
+</div>
+      </form>
+      <div id="loading" >
+      </div>
+  <ol id="facts"></ol>
+<div id="photos"></div>
+</div>
+   <form> 
+<div class="loading">
+ 
+
+</div>
+   </form>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
